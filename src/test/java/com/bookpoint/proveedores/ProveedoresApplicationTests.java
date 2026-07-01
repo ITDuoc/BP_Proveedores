@@ -2,12 +2,18 @@ package com.bookpoint.proveedores;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
+@ActiveProfiles("test")
 class ProveedoresApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
+    @Test
+    void mainEjecutaAplicacion() {
+        ProveedoresApplication.main(new String[] {});
+    }
 }
